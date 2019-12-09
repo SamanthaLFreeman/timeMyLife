@@ -1,6 +1,5 @@
 import React from 'react';
 import ActivityForm from '../ActivityForm/ActivityForm';
-import './App.css';
 
 const App = () => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ActivityForm = () => {
   return (
-    <section>
+    <form className='ActivityForm'>
       <h2>New Activity</h2>
       <p>Select a category:</p>
       <button>Study</button>
@@ -12,7 +12,7 @@ const ActivityForm = () => {
       <input placeholder='Minutes' />
       <input placeholder='Seconds' />
       <button>Start Activity</button>
-    </section>
+    </form>
   )
 }
 
