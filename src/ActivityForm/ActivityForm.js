@@ -16,4 +16,4 @@ const ActivityForm = () => {
   )
 }
 
-export const ActivityForm;
+export default ActivityForm;

@@ -1,4 +1,5 @@
 import React from 'react';
+import ActivityForm from '../ActivityForm/ActivityForm';
 import './App.css';
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
       <header className="App-header">
         <h1>Time My Life</h1>
       </header>
+      <ActivityForm />
     </div>
   );
 }
