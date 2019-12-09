@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
+import ActivityForm from '../ActivityForm/ActivityForm';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
         <h1>Time My Life</h1>
       </header>
+      <ActivityForm />
     </div>
   );
 }
