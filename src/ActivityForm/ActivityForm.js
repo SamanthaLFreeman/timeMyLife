@@ -5,13 +5,23 @@ const ActivityForm = () => {
     <form className='ActivityForm'>
       <h2>New Activity</h2>
       <p>Select a category:</p>
-      <button>Study</button>
-      <button>Meditate</button>
-      <button>Exercise</button>
-      <input placeholder='Name Activity'/>
-      <input placeholder='Minutes' />
-      <input placeholder='Seconds' />
-      <button>Start Activity</button>
+      <div className='categories'>
+        <button>Study</button>
+        <button>Meditate</button>
+        <button>Exercise</button>
+      </div>
+      <div className='inputs'>
+        <input 
+          placeholder='Name Activity'
+          type='text' />
+        <input 
+          placeholder='Minutes'
+          type='number' />
+        <input 
+          placeholder='Seconds'
+          type='number' />
+        <button>Start Activity</button>
+      </div>
     </form>
   )
 }
