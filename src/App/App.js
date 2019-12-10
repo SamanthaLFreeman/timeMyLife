@@ -8,8 +8,10 @@ const App = () => {
       <header className="App-header">
         <h1>Time My Life</h1>
       </header>
-      <ActivityForm />
-      <PastActivities />
+      <main className="main">
+        <ActivityForm />
+        <PastActivities />
+      </main>
     </div>
   );
 }
