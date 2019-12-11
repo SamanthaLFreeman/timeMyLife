@@ -1,0 +1,26 @@
+.ActivityForm {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.categories {
+  width: 70%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+input {
+  margin: 15px 0;
+  padding: 10px;
+}
+
+button {
+  margin: 15px 0;
+  padding: 10px;
+}
