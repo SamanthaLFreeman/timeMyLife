@@ -6,7 +6,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      activities: []
+      activities: [
+        {
+          name: 'Test',
+          minutes: '05',
+          seconds: '30'
+        }
+      ]
     }
   }
 
@@ -18,7 +24,7 @@ class App extends Component {
         </header>
         <main className="main">
           <ActivityForm />
-          <PastActivities />
+          <PastActivities activities={this.state.activities} />
         </main>
       </div>
     )
