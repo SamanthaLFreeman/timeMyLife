@@ -8,9 +8,10 @@ class App extends Component {
     this.state = {
       activities: [
         {
+          category: 'Study',
           name: 'Test',
-          minutes: '05',
-          seconds: '30'
+          mins: '05',
+          secs: '30'
         }
       ]
     }
