@@ -7,6 +7,15 @@ class ActivityForm extends Component {
     }
   }
 
+  handleSubmit = () => {
+    let newActivity = {
+      name: '',
+      mins: '',
+      secs: ''
+    }
+    this.props.setCurrentActivity(newActivity)
+  }
+
   render() {
     return (
       <form className='ActivityForm'>
@@ -27,7 +36,7 @@ class ActivityForm extends Component {
           <input
             placeholder='Seconds'
             type='number' />
-          <button>Start Activity</button>
+          <button onClick={this.handleSubmit}>Start Activity</button>
         </div>
       </form>
     )

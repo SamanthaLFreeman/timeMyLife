@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ActivityForm from '../ActivityForm/ActivityForm';
 import PastActivities from '../PastActivities/PastActivities';
+import Timer from '../Timer/Timer';
 
 class App extends Component {
   constructor() {
@@ -13,8 +14,17 @@ class App extends Component {
           mins: '05',
           secs: '30'
         }
-      ]
+      ],
+      currentActivity: null
     }
+  }
+
+  setCurrentActivity = (currentActivity) => {
+    this.setState({currentActivity});
+  }
+
+  removeCurrentActivity = () => {
+    this.setState({currentActivity: null})
   }
 
   render() {
@@ -24,7 +34,8 @@ class App extends Component {
           <h1>Time My Life</h1>
         </header>
         <main className="main">
-          <ActivityForm />
+          {!this.state.currentActivity && <ActivityForm setCurrentActivity={this.setCurrentActivity} />}
+          {this.state.currentActivity && <Timer />}
           <PastActivities activities={this.state.activities} />
         </main>
       </div>
