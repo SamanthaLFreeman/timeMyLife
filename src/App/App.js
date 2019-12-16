@@ -35,7 +35,7 @@ class App extends Component {
         </header>
         <main className="main">
           {!this.state.currentActivity && <ActivityForm setCurrentActivity={this.setCurrentActivity} />}
-          {this.state.currentActivity && <Timer removeCurrentActivity={this.removeCurrentActivity} currentActivity={this.currentActivity} />}
+          {this.state.currentActivity && <Timer removeCurrentActivity={this.removeCurrentActivity} currentActivity={this.state.currentActivity} />}
           <PastActivities activities={this.state.activities} />
         </main>
       </div>

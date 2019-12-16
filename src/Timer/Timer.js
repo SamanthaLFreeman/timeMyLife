@@ -4,8 +4,7 @@ const Timer = ({removeCurrentActivity, currentActivity}) => {
   return (
     <section className='ActivityForm'>
       <h3>{currentActivity.name}</h3>
-      <p>{currentActivity.mins}</p>
-      <p>{currentActivity.secs}</p>
+      <p>{currentActivity.mins}:{currentActivity.secs}</p>
       <button>Start</button>
       <button onClick={removeCurrentActivity}>Cancel Activity</button>
     </section>

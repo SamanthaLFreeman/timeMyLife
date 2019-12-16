@@ -16,13 +16,8 @@ class ActivityForm extends Component {
   }
 
   handleSubmit = () => {
-    let newActivity = {
-      categories: '',
-      name: '',
-      mins: '',
-      secs: ''
-    }
-    this.props.setCurrentActivity(newActivity)
+    console.log(this.state)
+    this.props.setCurrentActivity(this.state)
   }
 
   render() {
