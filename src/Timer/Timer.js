@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Timer = ({removeCurrentActivity}) => {
+const Timer = ({removeCurrentActivity, currentActivity}) => {
   return (
     <section className='ActivityForm'>
-      <h3>Name</h3>
-      <p>Timer</p>
+      <h3>{currentActivity.name}</h3>
+      <p>{currentActivity.mins}</p>
+      <p>{currentActivity.secs}</p>
       <button>Start</button>
       <button onClick={removeCurrentActivity}>Cancel Activity</button>
     </section>
