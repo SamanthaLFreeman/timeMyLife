@@ -16,8 +16,13 @@ class ActivityForm extends Component {
   }
 
   handleSubmit = () => {
-    console.log(this.state)
-    this.props.setCurrentActivity(this.state)
+    const currentActivity = {
+      categories: this.state.categories,
+      name: this.state.name
+    }
+    const secs = parseInt(this.state.secs)
+    const mins = parseInt(this.state.mins)
+    this.props.setCurrentActivity(currentActivity, mins, secs)
   }
 
   render() {
