@@ -28,8 +28,8 @@ class App extends Component {
   removeCurrentActivity = () => {
     this.setState({
       currentActivity: null,
-      mins: null,
-      secs: null
+      mins: 0,
+      secs: 0
     })
   }
 

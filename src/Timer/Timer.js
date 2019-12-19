@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Timer = ({removeCurrentActivity, currentActivity, mins, secs, startTimer}) => {
+  if (mins !== 0 || secs !== 0) {
+    startTimer()
+  }
+
   return (
     <section className='ActivityForm'>
       <h3>{currentActivity.name}</h3>
