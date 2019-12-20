@@ -4,16 +4,25 @@ class ActivityForm extends Component {
   constructor() {
     super();
     this.state = {
-    }
-  }
-
-  handleSubmit = () => {
-    let newActivity = {
+      categories: '',
       name: '',
       mins: '',
       secs: ''
     }
-    this.props.setCurrentActivity(newActivity)
+  }
+
+  handleChange = (e) => {
+    this.setState({[e.target.name]: e.target.value})
+  }
+
+  handleSubmit = () => {
+    const currentActivity = {
+      categories: this.state.categories,
+      name: this.state.name
+    }
+    const secs = parseInt(this.state.secs)
+    const mins = parseInt(this.state.mins)
+    this.props.setCurrentActivity(currentActivity, mins, secs)
   }
 
   render() {
@@ -29,13 +38,22 @@ class ActivityForm extends Component {
         <div className='inputs'>
           <input
             placeholder='Name Activity'
-            type='text' />
+            type='text'
+            name='name'
+            value={this.state.name}
+            onChange={this.handleChange} />
           <input
             placeholder='Minutes'
-            type='number' />
+            type='number'
+            name='mins'
+            value={this.state.mins}
+            onChange={this.handleChange} />
           <input
             placeholder='Seconds'
-            type='number' />
+            type='number'
+            name='secs'
+            value={this.state.secs}
+            onChange={this.handleChange} />
           <button onClick={this.handleSubmit}>Start Activity</button>
         </div>
       </form>
