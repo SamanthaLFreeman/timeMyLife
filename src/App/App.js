@@ -35,16 +35,15 @@ class App extends Component {
 
   startTimer = () => {
     const { mins, secs } = this.state
-    if(mins !== 0 && secs !== 0) {
-    this.myInterval = setInterval(() => {
+    this.myInterval = setTimeout(() => {
       if (secs > 0) {
         this.setState({
           secs: secs - 1
         })
       }
-      if (secs === 0) {
-        if (mins === 0) {
-          clearInterval(this.myInterval)
+      if (mins === 0 ) {
+        if (secs !== 0) {
+          clearTimeout(this.myInterval)
         } else {
           this.setState({
             mins: mins - 1,
@@ -54,11 +53,6 @@ class App extends Component {
         }
       }
     }, 1000)
-  }
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.myInterval)
   }
 
   render() {
