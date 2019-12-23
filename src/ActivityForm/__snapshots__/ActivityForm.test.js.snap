@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityForm should match the snapshot with the correct data passed through 1`] = `
+<form
+  className="ActivityForm"
+>
+  <h2>
+    New Activity
+  </h2>
+  <p>
+    Select a category:
+  </p>
+  <div
+    className="categories"
+  >
+    <button>
+      Study
+    </button>
+    <button>
+      Meditate
+    </button>
+    <button>
+      Exercise
+    </button>
+  </div>
+  <div
+    className="inputs"
+  >
+    <input
+      name="name"
+      onChange={[Function]}
+      placeholder="Name Activity"
+      type="text"
+      value=""
+    />
+    <input
+      name="mins"
+      onChange={[Function]}
+      placeholder="Minutes"
+      type="number"
+      value=""
+    />
+    <input
+      name="secs"
+      onChange={[Function]}
+      placeholder="Seconds"
+      type="number"
+      value=""
+    />
+    <button
+      onClick={[Function]}
+    >
+      Start Activity
+    </button>
+  </div>
+</form>
+`;
