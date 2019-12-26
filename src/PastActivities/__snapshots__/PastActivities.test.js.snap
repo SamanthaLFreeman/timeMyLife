@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PastActivities should match the snapshot with the correct data passed through 1`] = `
+<section
+  className="PastActivities"
+>
+  <h2>
+    Past Activities
+  </h2>
+  <Activity
+    activity={
+      Object {
+        "category": "Study",
+        "mins": "1",
+        "name": "Activity name",
+        "secs": "30",
+      }
+    }
+    key="Activity nameStudy"
+  />
+</section>
+`;
