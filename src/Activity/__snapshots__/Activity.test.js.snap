@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Activity should match the snapshot with the correct data passed through 1`] = `
+<article
+  className="activityCard"
+>
+  <h3
+    className="activityText"
+  >
+    Study
+  </h3>
+  <p
+    className="activityText"
+  >
+    1
+     MIN 
+    30
+     SECONDS
+  </p>
+  <p
+    className="activityText"
+  >
+    Activity name
+  </p>
+</article>
+`;

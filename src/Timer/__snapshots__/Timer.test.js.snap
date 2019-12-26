@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timer should match the snapshot with the correct data passed through 1`] = `
+<section
+  className="ActivityForm"
+>
+  <h3>
+    Activity Name
+  </h3>
+  <p>
+    Time Remaining: 
+    1
+    :
+    30
+  </p>
+  <button
+    onClick={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  >
+    Start
+  </button>
+  <button
+    onClick={[MockFunction]}
+  >
+    Cancel Activity
+  </button>
+</section>
+`;

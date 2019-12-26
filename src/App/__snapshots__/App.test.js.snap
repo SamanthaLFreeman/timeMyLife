@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot with the correct data passed through 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1>
+      Time My Life
+    </h1>
+  </header>
+  <main
+    className="main"
+  >
+    <ActivityForm
+      setCurrentActivity={[Function]}
+    />
+    <PastActivities
+      activities={
+        Array [
+          Object {
+            "category": "Study",
+            "mins": "05",
+            "name": "Test",
+            "secs": "30",
+          },
+        ]
+      }
+    />
+  </main>
+</div>
+`;
